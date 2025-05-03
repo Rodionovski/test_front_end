@@ -69,6 +69,10 @@ input::placeholder {
     margin-left: 640px;
 }
 
+.glass {
+    display: none;
+}
+
 .personalOffice button {
     width: 40px;
     height: 40px;
@@ -127,6 +131,7 @@ input::placeholder {
 
 hr {
     border: 1px solid #969799;
+    border-radius: 20px;
     width: calc(100% - 120px);
     height: 2px;
     margin: 0 auto;
@@ -139,6 +144,10 @@ hr {
     align-items: center;
     justify-content: flex-start;
     margin: 30px auto 0;
+}
+
+.leftArrow {
+    display: none;
 }
 
 .mainPage {
@@ -164,16 +173,17 @@ hr {
 
 .crumbs {
     border: 1px solid #969799;
-    font-size: 15px;
     margin-left: 15px;
     width: 84%;
 }
+
 .mainInscription {
     color: #fff;
     font-size: 40px;
     padding-top: 40px;
     padding-left: 60px;
 }
+
 .card {
     display: flex;
     flex-wrap: wrap;
@@ -182,6 +192,7 @@ hr {
     margin-left: 60px;
     margin-top: 40px;
 }
+
 .container {
     position: relative;
     width: 420px;
@@ -190,10 +201,12 @@ hr {
     border: 1px solid #fff;
     border-radius: 20px;
 }
+
 .img img {
     width: 418px;
     border-radius: 20px;
 }
+
 .description {
     position: absolute;
     text-align: center;
@@ -204,6 +217,7 @@ hr {
     font-size: 24px;
     top: 250px;
 }
+
 .text {
     position: absolute;
     bottom: 55px;
@@ -215,18 +229,21 @@ hr {
 
     font-size: 14px;
 }
+
 .author {
     position: absolute;
     color: #fff;
     bottom: 20px;
     left: 20px;
 }
+
 .time {
     position: absolute;
     color: #fff;
     bottom: 20px;
     right: 20px;
 }
+
 .pagination {
     margin-bottom: 100px;
     margin-top: 80px;
@@ -235,17 +252,255 @@ hr {
     align-items: center;
     gap: 10px;
 }
+
 .pagination li {
     list-style: none;
     width: 30px;
     height: 20px;
     text-align: center;
 }
+
 .pagination li a {
     text-decoration: none;
     font-size: 16px;
     color: #fff;
 }
+
 .pagination li a:hover {
     color: red;
+}
+
+@media (max-width: 360px) {
+    body {
+        width: 360px;
+    }
+
+    .header {
+        height: 80px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 15px;
+    }
+
+    .logo {
+        padding-left: 0;
+        width: 142px;
+        height: 26px;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .personalOffice {
+        display: none;
+    }
+
+    .chargingCalculator {
+        display: none;
+    }
+
+    .glass {
+        padding: 8px;
+        border: 1px solid #58595D;
+        border-radius: 50%;
+        display: inline-block;
+        margin-left: 55px;
+    }
+
+    .glass button {
+        width: 20px;
+        height: 20px;
+        background-color: #2D2F34;
+        border: none;
+        padding: 2px;
+    }
+
+    .comparison {
+        padding: 8px;
+        border: 1px solid #58595D;
+        border-radius: 50%;
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    .comparison button {
+        width: 20px;
+        height: 20px;
+        background-color: #2D2F34;
+        border: none;
+        padding: 2px;
+    }
+
+    .mobileMenu {
+        padding: 8px;
+        border: 1px solid #58595D;
+        border-radius: 50%;
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    .mobileMenu button {
+        width: 20px;
+        height: 20px;
+        background-color: #2D2F34;
+        border: none;
+        padding: 2px;
+    }
+
+    hr {
+        border: 1px solid #969799;
+        border-radius: 20px;
+        width: calc(100% - 32px);
+        height: 2px;
+        margin: 0 auto;
+    }
+
+    .bredCrumbs {
+        width: calc(100% - 32px);
+        height: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 15px auto 0;
+    }
+
+    .mainPage {
+        color: #fff;
+        font-size: 12px;
+    }
+
+    .mainPage::after {
+        content: '';
+        border: solid #fff;
+        border-width: 0 1px 1px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+
+    .news {
+        color: #fff;
+        font-size: 12px;
+        margin-left: 8px;
+    }
+
+    .crumbs {
+        border: 1px solid #969799;
+        margin-left: 10px;
+        width: 47%;
+    }
+
+    .mainText {
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .leftArrow {
+        padding: 10px 14px;
+        border: 1px solid #58595D;
+        border-radius: 50%;
+        display: inline-block;
+        margin-left: 15px;
+    }
+
+    .leftArrow button {
+        width: 10px;
+        height: 16px;
+        background-color: #2D2F34;
+        border: none;
+        padding: 1px;
+    }
+
+    .mainInscription {
+        width: 270px;
+        height: 40px;
+        color: #fff;
+        margin-right: 15px;
+        font-size: 18px;
+        padding-top: 10px;
+        padding-left: 0;
+    }
+
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-left: 15px;
+        margin-top: 20px;
+    }
+
+    .container {
+        position: relative;
+        width: 330px;
+        height: 315px;
+        background-color: #2D2F34;
+        border: 1px solid #fff;
+        border-radius: 20px;
+    }
+
+    .img img {
+        width: 328px;
+        border-radius: 20px;
+    }
+
+    .description {
+        position: absolute;
+        text-align: center;
+        color: #fff;
+        width: 300px;
+        height: 40px;
+        padding-left: 15px;
+        font-size: 14px;
+        top: 180px;
+    }
+
+    .text {
+        position: absolute;
+        bottom: 50px;
+        left: 15px;
+        text-align: left;
+        color: #fff;
+        width: 300px;
+        height: 45px;
+        font-size: 12px;
+    }
+
+    .author {
+        font-size: 12px;
+        position: absolute;
+        color: #fff;
+        bottom: 15px;
+        left: 15px;
+    }
+
+    .time {
+        font-size: 12px;
+        position: absolute;
+        color: #fff;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .pagination {
+        display: none;
+    }
+
+    .pagination li {
+        display: none;
+    }
+
+    .pagination li a {
+        display: none;
+    }
+
+    .pagination li a:hover {
+        display: none;
+    }
+
 }
